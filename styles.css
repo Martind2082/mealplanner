@@ -1,0 +1,51 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+#intro {
+    width: 100vw;
+    position: relative;
+    height: 60vh;
+}
+#intro img {
+    transform: rotateY(180deg);
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+#intro-text {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    font-size: 2rem;
+    left: 3rem;
+    width: 40%;
+    top: 3rem;
+}
+#searchrecipe {
+    background: black;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#searchrecipe div {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+#searchrecipe input {
+    background: black;
+    outline: none; 
+    border: none; 
+    border-bottom: 1px solid white; 
+    color: white;
+    font-size: 3rem;
+    margin-left: 1rem;
+}
