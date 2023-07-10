@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 #intro {
     width: 100vw;
@@ -48,4 +49,30 @@ body, html {
     color: white;
     font-size: 3rem;
     margin-left: 1rem;
+}
+
+#recipe-results {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    position: absolute;
+    display: none;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+#recipe-results--title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+#recipes {
+    width: 100%;
+    display: block;
+    padding-bottom: 2rem;
+}
+.reciperesult {
+    box-shadow: 1px 2px 8px gray;
+    width: 80%;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+    display: flex;
 }
