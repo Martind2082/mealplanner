@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+* {
+  font-family: 'Quicksand';
+}
 body, html {
     margin: 0;
     padding: 0;
@@ -60,6 +64,10 @@ body, html {
     padding: 1rem 2rem;
     box-sizing: border-box;
 }
+#recipe-results--back:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
 #recipe-results--title {
     font-weight: bold;
     font-size: 2rem;
@@ -72,7 +80,42 @@ body, html {
 .reciperesult {
     box-shadow: 1px 2px 8px gray;
     width: 80%;
-    border: 2px solid black;
     margin-bottom: 2rem;
     display: flex;
+}
+
+#popup {
+    background: rgb(222, 82, 82);
+    border-radius: 15px;
+    border: 2px solid red;
+    width: 60%;
+    height: 100px;
+    font-size: 2rem;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    z-index: 10;
+    animation: popup 2s;
+}
+@keyframes popup {
+    0% {
+        left: 50%;
+        top: -20%;
+        display: flex;
+    }
+    30% {
+        left: 50%;
+        top: 10%;
+        display: flex;
+    }
+    100% {
+        left: 50%;
+        top: 10%;
+    }
 }
