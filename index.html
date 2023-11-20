@@ -14,19 +14,96 @@
         </div>
         <div id="intro-text">
             <p>Homemade Restaurant</p>
-            <p>Find your recipes and know what you are eating</p>
+            <p>Find your recipes</p>
+            <p>Know what you are putting into yourself</p>
         </div>
         <div id="searchrecipe">
             <div>
-                <i style="color: white;" class="fa-solid fa-magnifying-glass"></i>
+                <i id="magnifying-glass" style="color: white;" class="fa-solid fa-magnifying-glass"></i>
                 <input id="recipeinput" placeholder="Find your Recipes">
             </div>
         </div>
-        <div id="popup">No recipes found</div>
+        <div id="popup"></div>
+
+        <img id="nutrition-img" src="https://images.unsplash.com/photo-1555243896-c709bfa0b564?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+        <div id="nutrition">
+            <p id="nutrition-title">Nutrition Analysis</p>
+            <p style="font-size: 1rem;" id="nutrition-instructions">Enter your food options below - ex: 1 cup rice, 10 oz chicken, 1 whole apple</p>
+            <textarea id="nutrition-textarea"></textarea>
+            <button id="nutrition-button">Analyze my food!</button>
+        </div>
+
+        <div id="nutrition-results">
+            <p style="font-weight: bold; font-size: 2rem;">Nutrition Facts</p>
+            <p style="font-weight: bold; font-size: 1.2rem;">Amount Per Serving</p>
+            <div style="display: flex; justify-content: space-between;" id="calories">
+                <p>Calories</p>
+                <p id="calories-num"></p>
+            </div>
+            <div id="nutrition-info">
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="recipe-results">
-        <p id="recipe-results--back" style="font-weight: bold; font-size: 1.5rem;"><i class="fa-solid fa-angle-left"></i> Back</p>
+        <p class="goback" style="font-weight: bold; font-size: 1.5rem;"><i class="fa-solid fa-angle-left"></i> Back</p>
         <p id="recipe-results--title"></p>
         <p id="recipes"></p>
     </div>
