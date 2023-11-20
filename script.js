@@ -130,7 +130,6 @@ async function getnutrition(val) {
                 document.getElementById('popup').style.display = 'none';
             }, 2000);
             return;
-            return;
         }
 
         nutritionresults.style.display = "block";
@@ -153,6 +152,9 @@ async function getnutrition(val) {
 
             let gramsname = gramsarray[i];
             if (gramsname !== "") {
+                if (!data.totalNutrients[gramsname]) {
+                    continue;
+                }
                 let grams = Math.round(data.totalNutrients[gramsname].quantity * 10) / 10 ;
                 nutritioninfo.children[i].children[0].textContent = `${namearray[i]} ${grams} ${data.totalNutrients[gramsname].unit}`;
             } else {
@@ -162,6 +164,9 @@ async function getnutrition(val) {
 
             let percentname = percentarray[i];
             if (percentname !== "") {
+                if (!data.totalDaily[percentname]) {
+                    continue;
+                }
                 let percent = Math.round(data.totalDaily[percentname].quantity);
                 nutritioninfo.children[i].children[1].textContent = `${percent} %`;
             } else {
