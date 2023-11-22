@@ -174,3 +174,65 @@ body, html {
     top: 40rem;
     padding: 0.5rem 1rem;
 }
+
+#nutrition-xmark {
+    font-size: 2rem;    
+    position: absolute;
+    right: 1rem;
+}
+#nutrition-xmark:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    #intro-text {
+        width: 80%;
+    }
+    #searchrecipe div {
+        height: 100%;
+    }
+    #searchrecipe, #searchrecipe input {
+        height: 10vh;
+        font-size: 1.5rem;
+    }
+    #magnifying-glass {
+        font-size: 2rem;
+    }
+    #nutrition {
+        top: 70vh;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        font-weight: bold;
+    }
+    #nutrition-title {
+        font-size: 1.5rem;
+    }
+    #nutrition-img {
+        filter: blur(4px);
+    }
+    #nutrition textarea {
+        height: 10vh;
+        font-size: 1rem;
+    }
+    #nutrition button {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .reciperesult {
+        display: block;
+        padding-bottom: 0.5rem;
+    }
+
+    #nutrition-results {
+        width: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: min-content;
+        padding-bottom: 3rem;
+        bottom: 2rem;
+    }
+}

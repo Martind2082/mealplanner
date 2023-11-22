@@ -190,3 +190,8 @@ document.getElementById("nutrition-button").addEventListener("click", () => {
     array = array.join('');
     getnutrition(array);
 })
+
+
+document.getElementById('nutrition-xmark').addEventListener("click", () => {
+    nutritionresults.style.display = "none";
+})
