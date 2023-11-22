@@ -49,7 +49,6 @@ body, html {
     background: black;
     outline: none; 
     border: none; 
-    border-bottom: 1px solid white; 
     color: white;
     font-size: 3rem;
     margin-left: 1rem;
@@ -187,12 +186,17 @@ body, html {
 @media screen and (max-width: 767px) {
     #intro-text {
         width: 80%;
+        top: 7rem;
+        font-size: 1.5rem;
     }
     #searchrecipe div {
         height: 100%;
     }
-    #searchrecipe, #searchrecipe input {
+    #searchrecipe {
         height: 10vh;
+    }
+    #searchrecipe input {
+        height: 80%;
         font-size: 1.5rem;
     }
     #magnifying-glass {
